@@ -32,10 +32,12 @@ export class Clock extends React.Component<Props, State> {
     const currentName = this.props.name;
 
     if (prevState.currentTime !== this.state.currentTime) {
+      // eslint-disable-next-line no-console
       console.log(this.state.currentTime);
     }
 
     if (prevName !== currentName) {
+      // eslint-disable-next-line no-console
       console.warn(`Renamed from ${prevName} to ${currentName}`);
     }
   }
